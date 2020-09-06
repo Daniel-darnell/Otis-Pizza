@@ -1,7 +1,9 @@
 * {
     padding: 0;
     margin: 0;
-    background-color: grey;
-    background-image: url('./Assets/backgrounds/1.jpg');
-    background-position: cover;
+    background-color: white;
+}
+header {
+    background: url('./Assets/backgrounds/1.jpg');
+    height: 90vh;
 }
