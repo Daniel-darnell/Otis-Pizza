@@ -117,89 +117,97 @@
 
     <section id="MakeYourOrder">
         <h1>ORDER WITH US</h1>
-        <div id="OrderWithUs" class="container-fluid orders">
-            <div class="row">
-                <div class="col-md-5 p-2">
-                    <h2 class="text-center text-white">Make Your Order Here!</h2>
-                    <select class="form-control form-control-sm">
-                        <option class="text-center" value="default">
-                            <h2><strong>Select Pizza Prefference</strong></h2>
-                        </option>
-                        <option value="Cheeseburger.">Cheese</option>
-                        <option value="mozarellacheesepizza.">Mozarella</option>
-                        <option value="TripleChicken_20181012.">Chicken and Beef Pepperoni</option>
-                        <option value="veggie-feast2.">Vegan</option>
-                        <option value="Spicy-borewors.">Spicy-boerewors</option>
-                        <option value="Hawaiian-BBQ-Chicken-PIzza-new-500x375">Hawaiian-BBQ-Chicken</option>
-                        <option value="Meat-Deluxe">Meat deluxe</option>
-                        <option value="chicken-macon-BBQ">Chickn-Macon Chicken-Macon-BBQ</option>
-                    </select><br>
+        <div id="orders" class="orders"><br><br>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-5 p-2">
+                        <h3 class="text-center text-white">PLace Your Orders</h3>
+                        <select class="form-control form-control-sm" id="type">
+                            <option class="text-center" value="default">
+                                <h3><strong>🍕Select Pizza Type🍕</strong></h3>
+                            </option>
+                            <option value="Chicken Hawaiian.">Chicken Hawaiian.</option>
+                            <option value="Cheese Burger.">Cheese Burger.</option>
+                            <option value="Meat Deluxe.">Meat Deluxe.</option>
+                            <option value="Chicken Macon BBQ.">Chicken Macon BBQ.</option>
+                            <option value="Chicken & Beef Pepperoni.">Chicken & Beef Pepperoni.</option>
+                            <option value="Veg Feast.">Veg Feast.</option>
+                            <option value="Roast Veg & Feta.">Roast Veg & Feta.</option>
+                            <option value="Spicy Boerewors.">Spicy Boerewors.</option>
+                        </select> <br>
+                        <select class="form-control form-control-sm" id="size">
+                            <option class="text-center">
+                                <h3><strong>Select Piece Size👨🏽‍🍳</strong></h3>
+                            </option>
+                            <option value="large">Large @Ksh.1,500</option>
+                            <option value="medium">Medium @Ksh.1,150</option>
+                            <option value="small">Small @Ksh.900</option>
+                        </select> <br>
+                        <select class="form-control form-control-sm" id="crust">
+                            <option class="text-center">
+                                <h3> <strong>Select Crust</strong></h3>
+                            </option>
+                            <option value="cheese">Cheese-Stuffed Crust @Ksh.100 </option>
+                            <option value="thin">Thin Crust @Ksh.70</option>
+                            <option value="neapolitan">Neapolitan Crust @Ksh.120</option>
+                        </select><br>
 
-                    <select class="form-control form-control-sm" id="size">
-                        <option class="text-center">
-                            <h2><strong>Select Pizza size</strong></h2>
-                        </option>
-                        <option value="large">Large @ sh.1300</option>
-                        <option value="medium">Medium @ sh.800</option>
-                        <option vlaue="small">Small @ sh.600</option>
-                    </select><br>
+                        <select id="toppings" class="form-control form-control-sm">
+                            <option value="default">Choose a prefferable topping</option>
+                            <option value="Pepperoni">Pepperoni. @Ksh.10</option>
+                            <option value="Mushrooms">Mushrooms. @Ksh.40</option>
+                            <option value="Onions">Onions. @Ksh.15</option>
+                            <option value="Sausage">Sausage. @Ksh.20</option>
+                            <option value="Bacon">Bacon. @Ksh.30</option>
+                            <option value="Extra-cheese">Extra cheese. @Ksh10</option>
+                            <option value="Black-olives">Black olives. @Ksh.15</option>
+                            <option value="Green-peppers">Green peppers. @Ksh.5</option>
+                        </select><br>
 
-                    <select class="form-control form-control-sm" id="size">
-                        <option class="text-center">
-                            <h2><strong>Select Preffered Crust</strong></h2>
-                        </option>
-                        <option value="large">Large @ sh.1300</option>
-                        <option value="medium">Medium @ sh.800</option>
-                        <option vlaue="small">Small @ sh.600</option>
-                    </select><br>
+                        <div class="quantity">
+                            <input value="" type="number" name="number" id="quantity"
+                                placeholder="Choose Quantity eg 2">
+                        </div><br><br>
+                        &nbsp; &nbsp; &nbsp; <button type="submit" id="checkout" class="btn btn-success">Place
+                            Order</button>
+                        &nbsp; &nbsp; &nbsp; <button type="reset" id="" class="btn btn-danger">Clear Order</button>
 
-                    <select class="form-control form-control-sm" id="size">
-                        <option class="text-center">
-                            <h2><strong>Select Preffered Topping</strong></h2>
-                        </option>
-                        <option value="large">Large @ sh.1300</option>
-                        <option value="medium">Medium @ sh.800</option>
-                        <option vlaue="small">Small @ sh.600</option>
-                    </select><br>
 
-                    <div class="quantity">
-                        <input value="" type="number" name="number" id="quantity"
-                            placeholder="Choose quantity i.e 3">
-                    </div><br>
-                    &nbsp; &nbsp; &nbsp; <button type="submit" id="checkout" class="btn btn-success">Place Order</button>
-                    &nbsp; &nbsp; &nbsp; <button type="reset" id="" class="btn btn-success">Clear Order</button>
+                    </div>
 
+                    
+                    <div class="container-fluid col-md-7 p-2 summation">
+                        <div class="container-fluid summarypreview p-2">
+                            <h5 class="text-white text-center">Total summation of your order.</h5>
+                            <table class="table table-sm p-2">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Size</th>
+                                        <th scope="col">Crust</th>
+                                        <th scope="col">Topping</th>
+                                        <th scope="col">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="ptype"></td>
+                                        <td id="psize"></td>
+                                        <td id="cprice"></td>
+                                        <td id="tprice"></td>
+                                        <td id="summation"></td>
+                                    </tr>
+                                </tbody>
+                            </table><br>
+                            <h6 class="delivery"><strong>For home/to door delivery @ksh.100</strong></h6>
+                            <button id="final" value="true" type="submit" class="btn btn-success">Checkout</button>
+                            <button id="delivery" type="submit" class="btn btn-success">Delivery</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="container-fluid col-md-7 p-2 summation">
-                <div class="container-fluid summarypreview p-2">
-                    <h3 class="text-white text-center">Total Sum of Your Order</h3>
-                    <table class="table table-sm p-2">
-                        <thread>
-                            <tr>
-                                <th scope="col">Name</th>
-                                <th scope="col">Size</th>
-                                <th scope="col">Crust</th>
-                                <th scope="col">Topping</th>
-                                <th scope="col">Total</th>
-                            </tr>
-                        </thread>
-                        <tbody>
-                            <td id="ptype"></td>
-                            <td id="psize"></td>
-                            <td id="cprice"></td>
-                            <td id="tprice"></td>
-                            <td id="summation"></td>
-                        </tbody>
-                    </table><br>
-                    <h4 class="delivery"><strong>For deliveries @ sh.150</strong></h4>
-                    <button id="final" value="true" type="submit" class="btn btn-success">checkout</button>
-                    <button id="delivery" value="submit" class="btn btn-success">Delivery</button>
-                </div>
-            </div>
-        </div><br><br>
-    </section><br>
+            </div> <br>
+        </div> <br><br>
+    </div> <br>
 
     <section id="footer">
         
