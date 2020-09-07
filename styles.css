@@ -61,3 +61,7 @@ body {
 #WhatWeOffer {
     height: 60vh;
 }
+#WhatWeOffer h1 {
+    text-align: center;
+    padding: 20px;
+}
