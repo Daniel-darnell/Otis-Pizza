@@ -58,10 +58,21 @@ body {
     font-size: 50px;
     font-weight: 900;
 }
-#WhatWeOffer {
-    height: 20vh;
+/* #WhatWeOffer {
+    /* height: 20vh; */
+    /* height: 460px; */
+
+#whatWeOffer h1 {
+    font-weight: 900;
+    color: blue;
 }
-#WhatWeOffer h1 {
+#MakeYourOrder {
+    background: darkgrey;
+    padding: 0;
+    margin: 0;
+}
+#MakeYourOrder h1 {
     text-align: center;
-    padding: 20px;
+    font-weight: 900;
+    color: blue;
 }
